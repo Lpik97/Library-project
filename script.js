@@ -11,9 +11,10 @@ function addBookToLibrary(title, author, pages) {
 }
 
 function displayBooks() {
+  const booksSection = document.body.querySelector('.books');
   myLibrary.forEach(book => {
-    console.log("Title: " + book.title);
-    console.log("Author: " + book.author);
-    console.log("Pages: " + book.pages);
+    const card = document.createElement('div');
+    card.textContent = `Title: ${book.title}, Author: ${book.author}, Pages: ${book.pages}`;
+    booksSection.appendChild(card);
   });
 }
