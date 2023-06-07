@@ -5,3 +5,16 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+.add-book {
+    font: normal 500 2.5vw Arial;
+    color: grey;
+}
+
+.books {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(161, 171, 178);
+    border: 2.5px solid rgb(89, 139, 182);
+}
