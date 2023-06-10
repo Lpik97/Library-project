@@ -64,10 +64,15 @@ body {
     cursor: pointer;
 }
 
-.books {
+form {
     display: flex;
-    width: 50vw;
-    height: 50vh;
-    background-color: rgb(161, 171, 178);
-    border: 2.5px solid rgb(89, 139, 182);
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+    height: 15vw;
+    text-align: center;
+    padding: 1vw;
+    border: 1px solid #ddd;
+    border-radius: .5vw;
+    box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.1);
 }
