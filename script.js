@@ -42,6 +42,18 @@ function render() {
   }
 }
 
+function removeBook(i) {
+  myLibrary.splice(i, 1);
+  render();
+}
+
+function changeStatus(event) {
+  const index = parseInt(event.target.getAttribute('data-index'));
+  myLibrary[index].read = !myLibrary[index].read;
+  render();
+}
+
+
 let newBookBtn = document.querySelector('.new-book-btn');
 newBookBtn.addEventListener('click', function () {  
   let newBookForm = document.querySelector('#new-book-form');
