@@ -41,3 +41,14 @@ function render() {
     library.appendChild(card);
   }
 }
+
+let newBookBtn = document.querySelector('.new-book-btn');
+newBookBtn.addEventListener('click', function () {  
+  let newBookForm = document.querySelector('#new-book-form');
+  newBookForm.style.visibility = "visible";
+});
+
+document.querySelector('#new-book-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  addBookToLibrary();
+});
