@@ -112,3 +112,24 @@ input[type=checkbox] {
     border-radius: .5vw;
     box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.1);
 }
+
+.buttons {
+    display: flex;
+    margin-left: 6.5vw;
+}
+
+.delete-btn, .status-btn {
+    width: 1.3vw;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    font: 600 italic 1.4vw Arial;
+}
+
+.card-header h5 {
+    font: 300 normal 1vw Arial;
+}
+ p {
+    margin: .5vw 0;
+}
