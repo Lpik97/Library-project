@@ -7,8 +7,14 @@ function Book(title, author, pages, read) {
   this.read = read
 }
 
-function addBookToLibrary(title, author, pages) {
-  myLibrary.push(new Book(title, author, pages));
+function addBookToLibrary() {
+  let title = document.getElementById('title').value;
+  let author = document.getElementById('author').value;
+  let pages = document.getElementById('pages').value;
+  let read = document.getElementById('read').checked;
+  let newBook = new Book (title, author, pages, read);
+  myLibrary.push(newBook);
+  render();
 }
 
 function render() {
