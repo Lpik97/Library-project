@@ -52,9 +52,16 @@ body {
     gap: 5vw;
 }
 
-.add-book {
-    font: normal 500 2.5vw Arial;
-    color: grey;
+.new-book-btn {
+    margin-top: 5vw;
+    font: 600 normal 1.5vw Arial;
+    width: 10vw;
+    height: 2.5vw;
+    color: rgb(110, 110, 110);
+    background-color: rgb(229, 229, 229);
+    border: none;
+    border-radius: 10vw;
+    cursor: pointer;
 }
 
 .books {
