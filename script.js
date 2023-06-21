@@ -1,11 +1,13 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.read = read
-}
+class Book {
+  constructor (title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  };
+};
 
 function addBookToLibrary() {
   let title = document.getElementById('title').value;
@@ -15,7 +17,7 @@ function addBookToLibrary() {
   let newBook = new Book (title, author, pages, read);
   myLibrary.push(newBook);
   render();
-}
+};
 
 function render() {
   let library = document.querySelector('#library');
@@ -39,19 +41,19 @@ function render() {
     </div>
     `;
     library.appendChild(card);
-  }
-}
+  };
+};
 
 function removeBook(i) {
   myLibrary.splice(i, 1);
   render();
-}
+};
 
 function changeStatus(event) {
   const index = parseInt(event.target.getAttribute('data-index'));
   myLibrary[index].read = !myLibrary[index].read;
   render();
-}
+};
 
 
 let newBookBtn = document.querySelector('.new-book-btn');
